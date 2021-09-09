@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'Umedical',
+  appId: 'com.nitcotek.Umedical',
+  appName: 'يو',
   webDir: 'www',
   bundledWebRuntime: false
 };

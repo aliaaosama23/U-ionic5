@@ -1,0 +1,29 @@
+<ion-content [ngClass]="isIos? 'ion-padding-top':''">
+ 
+  <div class="btn-back">
+    <ion-row class=" ion-padding-top">
+      <ion-col size="10"></ion-col>
+      <ion-col size="2" class="ion-no-padding">
+        <ion-button   fill="outline" color="primary" (click)="GoBack()">
+          <ion-icon name="chevron-forward-outline" color="primary"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="app-logo ion-margin-top">
+    <img class="logo" src="../../../../assets/imgs/logo-wide u.png">
+ </div>
+
+ <div class="menu-items">
+
+  <ion-item lines="none" *ngFor="let menuItem of MenuItems" [routerLink]="menuItem.route">
+    <ion-label color="primary" class="menu-title">
+     {{menuItem.title|translate}}
+    </ion-label>
+    <ion-icon  class="item-icon"  [src]="menuItem.icon" slot="start"></ion-icon>
+  </ion-item>
+
+ </div>
+
+</ion-content>

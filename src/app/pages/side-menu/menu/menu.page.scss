@@ -1,0 +1,31 @@
+ion-content{
+    //--background: url('../../../../assets/imgs/bg.png') no-repeat center center / 100% 100%;
+    .app-logo{
+        margin-top: 5%;
+        text-align: center;
+        .logo{
+            width: 35%;
+        }
+    }
+    .menu-items{
+        margin-top: 5%;
+        .menu-title{
+            font-size: 18px;
+            margin-top: 0px;
+        }
+        .item-icon{
+            margin: -15px 16% 0 5%; // if language is arabic
+        }
+    }
+    .btn-back{
+        ion-button::part(native){
+            padding-inline-start:  0;
+            padding-inline-end: 0;
+        }
+        ion-button{
+            width: 70%;
+        }
+    }
+
+    
+}

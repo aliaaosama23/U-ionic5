@@ -1,0 +1,27 @@
+.home-cards{
+    padding-top: 4%;
+    ion-row{
+        margin: 0 5%;
+        ion-card{
+            padding-bottom: 3%;
+            border-radius: 10px;
+            padding-bottom: 8%;
+          img{
+              width:57px;
+              height: 58px;
+          }
+          .card-title{
+            font-size: 16px;
+            color: var(--ion-color-primary);
+            border-bottom: 1px solid;
+            line-height: 26px;
+            text-transform: lowercase;
+            overflow: hidden;
+            /* width: 45px; */
+            white-space: nowrap;
+          }
+      }
+    }
+    
+    
+}

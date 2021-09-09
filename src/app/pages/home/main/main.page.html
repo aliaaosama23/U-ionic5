@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/menu" >
+        <ion-icon src="../../../../assets/imgs/menu.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" color="primary"> {{"home"|translate}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="home-banners">
+    <ion-slides loop="true" speed="300" pager="true" dir="rtl" [options]="slideOpts">
+      <ion-slide *ngFor="let image of Home_Banners">
+        <img [src]="image">
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="home-cards">
+    <ion-row>
+      <ion-col size="6" *ngFor="let home_card of Home_Cards">
+        <ion-card class="ion-text-center" [routerLink]="home_card.route">
+          <ion-card-content>
+            <img [src]="home_card.image">
+            <h6 class="card-title U-Bold"> {{home_card.title|translate}} </h6>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

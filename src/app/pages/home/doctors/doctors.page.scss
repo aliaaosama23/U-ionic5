@@ -1,0 +1,105 @@
+/* Set the width to the full container and center the content */
+ion-select {
+    width: 100%;
+    justify-content: center;
+    /* Set a different placeholder color */
+    --placeholder-color: var(--ion-color-medium);
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 10px;
+}
+
+/* Set the text color */
+ion-select::part(text) {
+    color: var(--ion-color-medium);
+}
+
+/* Set the icon color and opacity */
+ion-select::part(icon) {
+    color:var(--ion-color-primary);
+    opacity: 1;
+}
+
+ion-item.select-interface-option.md.sc-ion-select-popover.item.in-list.ion-activatable.ion-focusable.hydrated.item-label{
+  border-bottom: none !important;
+}
+
+.branches{
+    margin-bottom: 3%;
+}
+
+.branchClinics{
+    margin-bottom: 3%;
+}
+
+.no-data{
+    margin-top: 10%;
+    font-size: 20px;
+    color:var(--ion-color-primary);
+    text-align: center;
+}
+
+ion-card{
+    margin-bottom: 15px;
+    .light-btn{
+        color: car(--ion-color-primary) !important;
+    }
+    .primary-btn{
+        color: car(--ion-color-white) !important;
+    }
+}
+
+.doctor-name{
+    h6{
+        font-size: 20px;
+    }
+}
+
+.doctor-card-icon-ar{
+    margin:  0px !important;
+}
+
+.doctor-card-icon-en{
+      margin:   0px !important;
+}
+
+.doctor-clinic{
+    img{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    }
+    p{
+        display: inline-block;
+        font-size: 16px;
+    }
+    ion-label{
+        margin-top: 0px //15px;
+    }
+   
+            
+    ion-item::part(native) {   
+        padding-inline-start: 0px !important;
+    --inner-padding-end:0;  
+    } 
+}
+
+.doctor-phone{
+    img{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    }
+    p{
+        display: inline-block;
+        font-size: 16px;
+    }
+    ion-label{
+        margin-top: 0px //15px;
+    }
+          
+    ion-item::part(native) {   
+        padding-inline-start: 0px !important; 
+    --inner-padding-end:0;   
+    }
+  
+}

@@ -24,3 +24,41 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+    font-family: 'HelveticaNeueW23-Reg';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/Font/HelveticaNeueW23-Reg.ttf');
+  }
+  
+  @font-face {
+    font-family: 'HelveticaNeueW23-Bd';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./assets/Font/HelveticaNeueW23-Bd.ttf');
+  }
+
+
+  @font-face {
+    font-family: 'U-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/Font/U-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'U-Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./assets/Font/U-Bold.ttf');
+  }
+
+  *{
+   font-family: 'U-Regular';
+  }
+
+  h1, h2, h4, h3, h5, h6, p, a, span, div {
+    font-family: 'U-Regular'; 
+}
